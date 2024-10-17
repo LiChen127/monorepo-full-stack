@@ -1,0 +1,27 @@
+{
+  "extends": "@skimhugo/tsconfig",
+  "compilerOptions": {
+    "outDir": "./dist",
+    // "输出文件包含类型"
+    "declaration": false,
+    // 要包含的类型声明文件路径ieb
+    "typeRoots": ["./node_modules/@types/"],
+    // 要导入的声明文件包，默认导入上面声明文件目录下的所有声明文件
+    "types": [],
+    // 在解析非绝对路径模块名时的基准路径
+    "baseUrl": ".",
+    // 基于baseUrl的路径映射集合
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  // 指定一个匹配列表
+  "include": [
+    "tests/**/*.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  "exclude": ["node_modules", "tests/server/**/*.ts", "**/*.js", "**/*.md"]
+}

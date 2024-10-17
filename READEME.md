@@ -1,0 +1,5 @@
+## Monorepo架构
+mono的意思是single, repo即repository
+Monorepo指的是一个代码仓库中管理多个项目
+这个项目是一个基于TypeScript的Monorepo项目，实现报名登记业务,主要用于学习Monorepo架构
+

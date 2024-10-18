@@ -1,0 +1,8 @@
+{
+  "name": "@faas/chapters",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "run:01": "deno run hello-world.ts"
+  }
+}
